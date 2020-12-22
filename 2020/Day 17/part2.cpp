@@ -1,3 +1,8 @@
+/*
+ * Second verse, same as the first but MORE.
+ * This is definitely the pointiest program I have ever written.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,11 +10,6 @@
 #include <vector>
 
 using namespace std;
-
-/**
- * Second verse, same as the first but MORE.
- * This is definitely the pointiest program I have ever written.
- */
 
 int main() {
     string inputVal;

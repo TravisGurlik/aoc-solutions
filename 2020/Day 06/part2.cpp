@@ -1,3 +1,7 @@
+/*
+ * Swap the set for a map for easy counting with uniqueness.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,10 +9,6 @@
 #include <map>
 
 using namespace std;
-
-/**
- * Swap the set for a map for easy counting with uniqueness.
- */
 
 int main() {
     string inputVal;

@@ -1,3 +1,8 @@
+/*
+ * New math. New-hoo-hoo math.
+ * The only difference between this Part and the last is in the actual evaluation.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,11 +11,6 @@
 #include <list>
 
 using namespace std;
-
-/**
- * New math. New-hoo-hoo math.
- * The only difference between this Part and the last is in the actual evaluation.
- */
 
 /**
  * Evaluates an Advanced New Math expression.

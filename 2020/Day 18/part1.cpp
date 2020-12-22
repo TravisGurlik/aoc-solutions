@@ -1,12 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-// Additional libraries for this Part:
-#include <sstream>
-
-using namespace std;
-
-/**
+/*
  * Day 18: Operation Order (https://adventofcode.com/2020/day/18)
  * I distinctly remember solving a problem that required parsing parenthesis before,
  *   but I can't remember how I did it.
@@ -17,6 +9,13 @@ using namespace std;
  *   value in and Do Math without worrying about anything else.
  */
 
+#include <iostream>
+#include <fstream>
+#include <string>
+// Additional libraries for this Part:
+#include <sstream>
+
+using namespace std;
 
 /**
  * Evaluates a "New Math" expression

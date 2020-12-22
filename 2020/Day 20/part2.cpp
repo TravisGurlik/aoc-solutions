@@ -14,7 +14,7 @@
  *     ..#
  *     ##.
  *   This makes determining which tiles are flipped fairly simple: if the adjacent edges are the
- *     same, the tiles have opposite flips and if one edge must be reverse they have the same flip.
+ *     same, the tiles have opposite flips and if one edge must be reversed they have the same flip.
  * Orientations are determined using the neighbors vector.
  *   Each element of the neighbors vector corresponds to the edge in the edges vector with the same index.
  *   Once we know the relative locations of two adjacent Tiles (and one of them is properly oriented),

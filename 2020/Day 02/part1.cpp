@@ -1,14 +1,14 @@
+/*
+ * Day 2: Password Philosophy (https://adventofcode.com/2020/day/2)
+ * Today was all about string manipulation.
+ * I don't have much to say about this one; my solution is fairly straightforward.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
 
 using namespace std;
-
-/**
- * Day 2: Password Philosophy (https://adventofcode.com/2020/day/2)
- * Today was all about string manipulation.
- * I don't have much to say about this one; my solution is fairly straightforward.
- */
 
 int main() {
     string inputVal;

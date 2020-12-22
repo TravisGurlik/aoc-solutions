@@ -1,3 +1,9 @@
+/*
+ * Ordering adpaters isn't that difficult thanks to Dynamic Programming.
+ * I did, however, lock up on how exactly to combine the subsolutions.
+ * The first part (variables, reading, and sorting) is the same as Part 1.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,12 +12,6 @@
 #include <algorithm>
 
 using namespace std;
-
-/**
- * Ordering adpaters isn't that difficult thanks to Dynamic Programming.
- * I did, however, lock up on how exactly to combine the subsolutions.
- * The first part (variables, reading, and sorting) is the same as Part 1.
- */
 
 int main() {
     string inputVal;

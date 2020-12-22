@@ -2,7 +2,7 @@
  * This Part barely required any new code.
  * I ended up solving this by hand by just printing the allergens list from the last Part.
  * After the fact, I came back and added code to solve the problem automatically.
- * All code through line ### is the same as in Part 1.
+ * All code through line 88 is the same as in Part 1.
  */
 
 #include <iostream>
@@ -31,9 +31,10 @@ int main() {
     // Variables:
     vector<pair<vector<string>, vector<string>>> dishes;
     set<string> allIs;
-    unordered_map<string, list<string>> allergens; // map allergen to possible ingredients
-    unordered_map<string, vector<int>> hasA; // map allergens to dishes it is in
-    vector<string> is, as;
+    unordered_map<string, list<string>> allergens;
+    unordered_map<string, vector<int>> hasA;
+    vector<string> is,
+                   as;
     string word;
     int lineNum = 0;
     bool readIs;
@@ -41,6 +42,7 @@ int main() {
     while(getline(input, inputVal)) {
         istringstream readIn(inputVal);
         readIs = false;
+
         while(readIn >> word) {
             if(word[0] == '(') {
                 readIs = true;
@@ -57,6 +59,7 @@ int main() {
                 allIs.insert(word);
             } // else
         } // while(readIn...)
+
         dishes.push_back(make_pair(is, as));
         is.clear();
         as.clear();

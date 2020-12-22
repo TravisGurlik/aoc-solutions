@@ -1,3 +1,10 @@
+/*
+ * This is the first Part 2 that doesn't resuse the previous Part's code.
+ * I already had my value (and allowing for command line input would have taken a little bit),
+ *   so the target value is simply hardcoded in.
+ * Since the ordering of the numbers needed to be preserved, I once again had to resort to brute force.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,13 +13,6 @@
 #include <algorithm>
 
 using namespace std;
-
-/**
- * This is the first Part 2 that doesn't resuse the previous Part's code.
- * I already had my value (and allowing for command line input would have taken a little bit),
- *   so the target value is simply hardcoded in.
- * Since the ordering of the numbers needed to be preserved, I once again had to resort to brute force.
- */
 
 int main() {
     string inputVal;

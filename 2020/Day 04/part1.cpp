@@ -1,3 +1,10 @@
+/*
+ * Day 4: Passport Processing (https://adventofcode.com/2020/day/4)
+ * This is where things started getting interesting.
+ * Multiple-line input is not overly easy to manage, and led to some minor issues.
+ * Luckily, finding the tags for each value was made simple for this problem.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,13 +13,6 @@
 #include <sstream>
 
 using namespace std;
-
-/**
- * Day 4: Passport Processing (https://adventofcode.com/2020/day/4)
- * This is where things started getting interesting.
- * Multiple-line input is not overly easy to manage, and led to some minor issues.
- * Luckily, finding the tags for each value was made simple for this problem.
- */
 
 /** 
  * Tests a passport for validity

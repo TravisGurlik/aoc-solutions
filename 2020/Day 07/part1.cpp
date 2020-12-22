@@ -1,3 +1,9 @@
+/*
+ * Day 7: Handy Haversacks (https://adventofcode.com/2020/day/7)
+ * This was the first major roadblock for a lot of people.
+ * I took a recursive approach because this task practically demands it.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -10,20 +16,12 @@
 using namespace std;
 
 /**
- * Day 7: Handy Haversacks (https://adventofcode.com/2020/day/7)
- * This was the first major roadblock for a lot of people.
- * I took a recursive approach because this task practically demands it.
- * Both Parts for today include lots of print statements for debugging.
- */
-
-/**
  * Determines which bags hold a given target bag, both directly and transitively
  * @param bags The list of bags and their parents
  * @param targetColor The bag color to find the parents of
  * @return A set of all of the target bag's ancestors
  */
 set<string> getParents(map<string, vector<string>> &bags, string targetColor) {
-    cout << "Finding parents for " << targetColor << " bags" << endl;
     set<string> output; // The output set
 
     // An explicit base case isn't needed, as the for loop handles it anyways.
@@ -33,17 +31,14 @@ set<string> getParents(map<string, vector<string>> &bags, string targetColor) {
         // Add the bag to the set:
         output.insert(s);
         // Get the bag's parents recursively and add them all to the set:
-        cout << "Added 1 bag, now at " << output.size() << endl;
         set<string> got = getParents(bags, s);
         cout << "Back to " << targetColor << endl;
         for(string gs : got) {
             output.insert(gs);
         } // for(gs...)
-        cout << "Added " << got.size() << " bags; now at " << output.size() << endl;
     } // for(s...)
 
     // Return the final set:
-    cout << "Finished " << targetColor << " bags with " << output.size() << " parents" << endl;
     return output;
 } // getParents()
 

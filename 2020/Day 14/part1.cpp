@@ -1,3 +1,9 @@
+/*
+ * Day 14: Docking Data (https://adventofcode.com/2020/day/14)
+ * Hooray for bit manipulation (kind of).
+ * This one has some complicated parts, but the overall process is fairly simple.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,13 +12,6 @@
 #include <map>
 
 using namespace std;
-
-/**
- * Day 14: Docking Data (https://adventofcode.com/2020/day/14)
- * Hooray for bit manipulation (kind of).
- * This one has some complicated parts, but the overall process is fairly simple.
- */
-
 
 /**
  * Converts a decimal number to binary

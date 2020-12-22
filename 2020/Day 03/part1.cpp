@@ -1,18 +1,18 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-
-using namespace std;
-
-/**
+/*
  * Day 3: Toboggan Trajectory (https://adventofcode.com/2020/day/3)
  * This puzzle also wasn't too complicated.
  * The main difficulty came from the looping, which could be handled pretty easily
  *   via modular arithmatic.
  * My main stumbling point was forgetting that getline also gets the newline character
  *   at the end of a line of text.
- * This particualr problem would come back to haunt me a few times.
+ * This particular problem would come back to haunt me a few times.
  */
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
 
 int main() {
     string inputVal;

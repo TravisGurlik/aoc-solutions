@@ -1,13 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-// Additional libraries for this Part:
-#include <vector>
-#include <utility>
-
-using namespace std;
-
-/**
+/*
  * Day 16: Ticket Translation (https://adventofcode.com/2020/day/16)
  * Passports 2 coming in hot.
  * Today was just a mess.
@@ -16,6 +7,15 @@ using namespace std;
  * Since I wasn't exactly sure what kind of input we'd get for the first section (the fields),
  *   I overgeneralized a bit there (hence the vector of vectors for the fields).
  */
+
+#include <iostream>
+#include <fstream>
+#include <string>
+// Additional libraries for this Part:
+#include <vector>
+#include <utility>
+
+using namespace std;
 
 int main() {
     string inputVal;

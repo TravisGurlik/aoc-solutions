@@ -1,3 +1,9 @@
+/*
+ * Second verse, literally exactly the same as the first.
+ * My initial solution was very slow; it was sped up by removing all the print statements and
+ *   switching to an unordered_map.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,12 +11,6 @@
 #include <unordered_map>
 
 using namespace std;
-
-/**
- * Second verse, literally exactly the same as the first.
- * My initial solution was very slow; it was sped up by removing all the print statements and
- *   switching to an unordered_map.
- */
 
 int main() {
     string inputVal;

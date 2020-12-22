@@ -1,3 +1,9 @@
+/*
+ * Do the same thing as in Part 1, but in the other direction.
+ * But this time, the numbers actually matter.
+ * I probably could have done a map of string to pair instead of string to map to save some overhead.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -8,13 +14,6 @@
 using namespace std;
 
 /**
- * Do the same thing as in Part 1, but in the other direction.
- * But this time, the numbers actually matter.
- * I probably could have done a map of string to pair instead of string to map to save some overhead.
- */
-
-
-/**
  * Recursively determines how many bags a given bag color holds.
  * @param bags The map of bags to their contents
  * @param bagContentTotals A map for tracking previously calculated values
@@ -22,8 +21,6 @@ using namespace std;
  * @return The number of bags contained within the base bag
  */
 int getContentsHelper(map<string, map<string, int>> &bags, map<string, int> &bagContentTotals, string targetColor) {
-    cout << "Finding contents for " << targetColor << " bags" << endl;
-
     // An explicit base case isn't needed, as the for loop handles it anyways.
 
     // Variables:
@@ -31,18 +28,14 @@ int getContentsHelper(map<string, map<string, int>> &bags, map<string, int> &bag
 
     // Loop through each bag contained in this one:
     for(auto i = bags[targetColor].begin(); i != bags[targetColor].end(); ++i) {
-        cout << " - Next content: " << i->second << " " << i->first << " bags" << endl;
         // Add the number of bags this bag contains to the total:
         // (Use the previously calculated value if there is one to avoid excessive recursive calls)
         int got = bagContentTotals.count(i->first) == 0 ? getContentsHelper(bags, bagContentTotals, i->first) : bagContentTotals[i->first];
-        cout << "Back to " << targetColor << endl;
         // Add all instances of this bag and its contents to the total:
         total += i->second * (got + 1);
-        cout << "Added " << i->second * (got + 1) << " bags; now at " << total << endl;
     } // for
 
     // Update previously calculated values and return the result:
-    cout << "Finished " << targetColor << " bags with " << total << " contents" << endl;
     bagContentTotals[targetColor] = total;
     return total;
 } // getContentsHelper()

@@ -1,9 +1,9 @@
 /*
  * Day 21: Allergen Assessment (https://adventofcode.com/2020/day/21)
- * Today was a nice breatehr from the chaos of yesterday.
+ * Today was a nice breather from the chaos of yesterday.
  * (Though my solution was still a bit of a mess).
  * Program flow: read dishes, identify which ingredients can have which allergens,
- *   find any ingredients not in these lists, count their occurances.
+ *   find any ingredients not in these lists, count their occurences.
  */
 
 #include <iostream>

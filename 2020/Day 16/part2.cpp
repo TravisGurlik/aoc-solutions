@@ -1,3 +1,11 @@
+/*
+ * I knew something like this would be coming for Part 2, but I still had a lot of restructuring to do.
+ * Now that the names of the fields actually matter, they have to be stored somewhere.
+ * I used a map, which made the last bit a little more interesting.
+ * Most of my time on this Part was spent getting the field identification to work properly.
+ *   There were a lot of small mistakes that needed fixing in there.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -7,14 +15,6 @@
 #include <utility>
 
 using namespace std;
-
-/**
- * I knew something like this would be coming for Part 2, but I still had a lot of restructuring to do.
- * Now that the names of the fields actually matter, they have to be stored somewhere.
- * I used a map, which made the last bit a little more interesting.
- * Most of my time on this Part was spent getting the field identification to work properly.
- *   There were a lot of small mistakes that needed fixing in there.
- */
 
 int main() {
     string inputVal;

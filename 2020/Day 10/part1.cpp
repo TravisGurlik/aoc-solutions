@@ -1,3 +1,9 @@
+/*
+ * Day 10: Adapter Array (https://adventofcode.com/2020/day/10)
+ * Why exactly would you ever need over 100 adapters?
+ * Part 1 is another problem made simple via sorting.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,12 +12,6 @@
 #include <algorithm>
 
 using namespace std;
-
-/**
- * Day 10: Adapter Array (https://adventofcode.com/2020/day/10)
- * Why exactly would you ever need over 100 adapters?
- * Part 1 is another problem made simple via sorting.
- */
 
 int main() {
     string inputVal;

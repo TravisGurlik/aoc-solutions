@@ -1,3 +1,7 @@
+/*
+ * There isn't really an easy way to verify a bunch of different fields with different rules.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,10 +9,6 @@
 #include <sstream>
 
 using namespace std;
-
-/**
- * There isn't really an easy way to verify a bunch of different fields with different rules.
- */
 
 /**
  * Tests a passport's data for validity

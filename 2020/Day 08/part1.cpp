@@ -1,3 +1,10 @@
+/*
+ * Day 8: Handheld Halting (https://adventofcode.com/2020/day/8)
+ * This assembly language is even easier than the one we used in EECS 370.
+ * Finding a loop isn't too tricky; just store which instructions have already been run.
+ * I used a boolean vector because it was smaller and easier to check than a list of run instructions.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,13 +12,6 @@
 #include <vector>
 
 using namespace std;
-
-/**
- * Day 8: Handheld Halting (https://adventofcode.com/2020/day/8)
- * This assembly language is even easier than the one we used in EECS 370.
- * Finding a loop isn't too tricky; just store which instructions have already been run.
- * I used a boolean vector because it was smaller and easier to check than a list of run instructions.
- */
 
 int main() {
     string inputVal;

@@ -5,7 +5,7 @@
  * I correctly assumed that each edge would match exactly one other edge (there are a
  *   lot of possible edges, so I felt this was safe).
  * This meant the corner tiles could be found by just looking for the ones that only
- *   had twwo valid neighbors.
+ *   had two valid neighbors.
  */
 
 #include <iostream>

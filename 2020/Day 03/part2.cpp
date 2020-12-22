@@ -1,12 +1,12 @@
+/*
+ * I didn't generalize my solution for Part 1, so I had ot do some adjustments for Part 2.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
 
 using namespace std;
-
-/**
- * I didn't generalize my solution for Part 1, so I had ot do some adjustments for Part 2.
- */
 
 int main() {
     string inputVal;

@@ -1,3 +1,8 @@
+/*
+ * Day 15: Rambunctious Recitation (https://adventofcode.com/2020/day/15)
+ * This one was pretty simple, but I struggled for a bit to order things properly.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,11 +10,6 @@
 #include <unordered_map>
 
 using namespace std;
-
-/**
- * Day 15: Rambunctious Recitation (https://adventofcode.com/2020/day/15)
- * This one was pretty simple, but I struggled for a bit to order things properly.
- */
 
 int main() {
     string inputVal;

@@ -1,3 +1,11 @@
+/*
+ * Part 2 was a little bit harder ot optimize.
+ * Since we're now checking 3 values, we could no longer use the same method as before.
+ * I resorted to brute force for this part, but I attempted to optimize it where I could:
+ *  - The list is still sorted so values can be considering in increasing order.
+ *  - Loops are broken out of as soon as the sum gets too large.
+ */
+
 #include <algorithm>
 #include <iostream>
 #include <fstream>
@@ -6,14 +14,6 @@
 #include <string>
 
 using namespace std;
-
-/**
- * Part 2 was a little bit harder ot optimize.
- * Since we're now checking 3 values, we could no longer use the same method as before.
- * I resorted to brute force for this part, but I attempted to optimize it where I could:
- *  - The list is still sorted so values can be considering in increasing order.
- *  - Loops are broken out of as soon as the sum gets too large.
- */
 
 int main() {
     string inputVal;

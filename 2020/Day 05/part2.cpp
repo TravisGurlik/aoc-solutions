@@ -1,3 +1,8 @@
+/*
+ * This is basically the same as the last part, but with a "find the missing element" bonus.
+ * I opted for the sort and iterate solution
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,11 +11,6 @@
 #include <algorithm>
 
 using namespace std;
-
-/**
- * This is basically the same as the last part, but with a "find the missing element" bonus.
- * I opted for the sort and iterate solution
- */
 
 int main() {
     string inputVal;

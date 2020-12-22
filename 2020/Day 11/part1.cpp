@@ -1,3 +1,10 @@
+/*
+ * Day 11: Seating System (https://adventofcode.com/2020/day/11)
+ * Having some experience with cellular automata made this a lot easier for me.
+ * This looks relly messy, but that's just how CA looks.
+ * This particular CA is B0/S0123, with a third "always dead" state.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,13 +12,6 @@
 #include <vector>
 
 using namespace std;
-
-/**
- * Day 11: Seating System (https://adventofcode.com/2020/day/11)
- * Having some experience with cellular automata made this a lot easier for me.
- * This looks relly messy, but that's just how CA looks.
- * This particular CA is B0/S0123, with a third "always dead" state.
- */
 
 int main() {
     string inputVal;

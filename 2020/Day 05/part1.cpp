@@ -1,13 +1,13 @@
+/*
+ * Day 5: Binary Boarding (https://adventofcode.com/2020/day/5)
+ * It's a set of binary searches. Not much else to add.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
 
 using namespace std;
-
-/**
- * Day 5: Binary Boarding (https://adventofcode.com/2020/day/5)
- * It's a set of binary searches. Not much else to add.
- */
 
 int main() {
     string inputVal;

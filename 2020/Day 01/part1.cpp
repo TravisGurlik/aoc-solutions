@@ -1,19 +1,10 @@
-#include <algorithm>
-#include <iostream>
-#include <fstream>
-// Additional libraries for this part:
-#include <vector>
-#include <string>
-
-using namespace std;
-
-/**
+/*
  * This is my first solution to any AoC problem.
  * You'll note that I quickly adopted a template for my solutions.
  * The parts of this template will only be explained in this file to avoid needless repetition.
  */
 
-/**
+/*
  * Day 1: Report Repair (https://adventofcode.com/2020/day/1)
  * My main goal for Part 1 was to find a way to avoid using a brute force method.
  * This was achieved by sorting the list, then starting with the largest and smallest values.
@@ -22,6 +13,15 @@ using namespace std;
  * If it's too small, move to the next smallest value (from the bottom).
  * This continues until we converge at the target value of 2020.
  */
+
+#include <algorithm>
+#include <iostream>
+#include <fstream>
+// Additional libraries for this part:
+#include <vector>
+#include <string>
+
+using namespace std;
 
 int main() {
     // The first part of my template is to open the input file for reading with an ifstream:

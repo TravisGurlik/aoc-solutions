@@ -1,12 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-// Additional libraries for this Part:
-#include <list>
-
-using namespace std;
-
-/**
+/*
  * Day 9: Encoding Error (https://adventofcode.com/2020/day/9)
  * Take Day 1 and apply it to something.
  * This uses the same strategy as I used in Day 1 of sorting the list and
@@ -15,6 +7,14 @@ using namespace std;
  * It was on this day that I discovered the wonder of lists, which made this
  *   problem much easier than it owuld have been with a vector.
  */
+
+#include <iostream>
+#include <fstream>
+#include <string>
+// Additional libraries for this Part:
+#include <list>
+
+using namespace std;
 
 int main() {
     string inputVal;

@@ -1,3 +1,10 @@
+/*
+ * Day 6: Custom Customs (https://adventofcode.com/2020/day/6)
+ * More mulit-line input, and more string manipulation.
+ * Part 1 was just a matter of adding each question to a set and returning its size
+ *   (as the set enforces uniqueness)
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,13 +12,6 @@
 #include <set>
 
 using namespace std;
-
-/**
- * Day 6: Custom Customs (https://adventofcode.com/2020/day/6)
- * More mulit-line input, and more string manipulation.
- * Part 1 was just a matter of adding each question to a set and returning its size
- *   (as the set enforces uniqueness)
- */
 
 int main() {
     string inputVal;

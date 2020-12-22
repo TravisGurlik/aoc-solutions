@@ -1,3 +1,8 @@
+/*
+ * Most of this part is the same as Part 1, with the exception of the neighbor detection.
+ * (And the rule; it's now B0/S01234.)
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,11 +10,6 @@
 #include <vector>
 
 using namespace std;
-
-/**
- * Most of this part is the same as Part 1, with the exception of the neighbor detection.
- * (And the rule; it's now B0/S01234.)
- */
 
 int main() {
     string inputVal;

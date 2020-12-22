@@ -1,15 +1,15 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-
-using namespace std;
-
-/**
+/*
  * Day 12: Rain Risk (https://adventofcode.com/2020/day/12)
  * This seems like a poor way to navigate a boat (you could at least be consistent with it),
  *   but I suppose if your boat can move sideways without turning its a bit necessary.
  * Anyways, welcome to "switch statement, the program."
  */
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
 
 int main() {
     string inputVal;

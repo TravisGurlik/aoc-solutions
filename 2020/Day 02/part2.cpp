@@ -1,12 +1,12 @@
+/*
+ * Part 2 was even easier than Part 1.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
 
 using namespace std;
-
-/**
- * Part 2 was even easier than Part 1.
- */
 
 int main() {
     string inputVal;

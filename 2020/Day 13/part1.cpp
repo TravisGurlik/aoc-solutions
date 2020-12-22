@@ -1,3 +1,9 @@
+/*
+ * Day 13: Shuttle Search (https://adventofcode.com/2020/day/13)
+ * I really wish buses were this consistent in real life.
+ * The most complicated part of this was getting each bus ID from the single massive input row.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,12 +12,6 @@
 #include <cmath>
 
 using namespace std;
-
-/**
- * Day 13: Shuttle Search (https://adventofcode.com/2020/day/13)
- * I really wish buses were this consistent in real life.
- * The most complicated part of this was getting each bus ID from the single massive input row.
- */
 
 int main() {
     string inputVal;

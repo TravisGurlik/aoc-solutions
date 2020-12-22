@@ -1,3 +1,10 @@
+/*
+ * Day 17: Conway Cubes (https://adventofcode.com/2020/day/17)
+ * Conway's Game of Life in higher dimensions? Well, it looks like a mess but isn't that bad.
+ * That said, there were a lot of minor mistakes I made on this one that took me awhile to resolve.
+ * This is actually exactly 3D CGL; the notation is S23/B3.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,13 +12,6 @@
 #include <vector>
 
 using namespace std;
-
-/**
- * Day 17: Conway Cubes (https://adventofcode.com/2020/day/17)
- * Conway's Game of Life in higher dimensions? Well, it looks like a mess but isn't that bad.
- * That said, there were a lot of minor mistakes I made on this one that took me awhile to resolve.
- * This is actually exactly 3D CGL; the notation is S23/B3.
- */
 
 int main() {
     string inputVal;
@@ -24,11 +24,11 @@ int main() {
     // Variables:
     // The first is our array of cubes. The dimensions in order are (z, y, x).
     vector<vector<vector<bool>>> cubes(13, vector<vector<bool>>(20, vector<bool>(20, false)));
-    int rowNum = 6, // The current input row
-        zMin = 5,   // The minimum possible z value for this iteration
-        zMax = 7,   // The maximum possible z value for this iteration
-        xyMin = 5,  // The minimum possible x/y value for this iteration
-        xyMax = 14; // The maximum possible x/y value for this iteration
+    int rowNum =  6, // The current input row
+        zMin   =  5, // The minimum possible z value for this iteration
+        zMax   =  7, // The maximum possible z value for this iteration
+        xyMin  =  5, // The minimum possible x/y value for this iteration
+        xyMax  = 14; // The maximum possible x/y value for this iteration
 
     while(getline(input, inputVal)) {
         // First, just read in the input and enable the proper cells:

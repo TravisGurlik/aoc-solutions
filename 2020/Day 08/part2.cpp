@@ -1,3 +1,11 @@
+/*
+ * Detecting a loop is easy. Fixing a loop is not.
+ * Elegant solutions eluded me, so I used brute force again.
+ * This does essentially the same thing as Part 1, but adds some extra steps.
+ * My main sticking point here was forgetting to switch the changed command back to what
+ *   it was initially upon failing to avoid the loop.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,14 +14,6 @@
 #include <algorithm>
 
 using namespace std;
-
-/**
- * Detecting a loop is easy. Fixing a loop is not.
- * Elegant solutions eluded me, so I used brute force again.
- * This does essentially the same thing as Part 1, but adds some extra steps.
- * My main sticking point here was forgetting to switch the changed command back to what
- *   it was initially upon failing to avoid the loop.
- */
 
 int main() {
     string inputVal;

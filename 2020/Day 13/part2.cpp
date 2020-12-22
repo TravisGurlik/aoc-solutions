@@ -1,3 +1,13 @@
+/*
+ * Surprise! Hope you know number theory!
+ * Knowing what Chinese Remainder Theorem is and how it works is extremelly useful for this Part.
+ * Luckily for me, I had taken a number theory class just the previous semester to this.
+ * That doesn't mean I was able to implement everything properly right away, though;
+ *   I ended up using x = i (mod m) instead of x = -i (mod m) and was quite confused at how
+ *   I was getting the same answer no matter how I calculated it but was still wrong.
+ * By the way, I hope you're prepared to wait some 6 billion years for this to happen.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -7,17 +17,6 @@
 #include <utility>
 
 using namespace std;
-
-/**
- * Surprise! Hope you know number theory!
- * Knowing what Chinese Remainder Theorem is and how it works is extremelly useful for this Part.
- * Luckily for me, I had taken a number theory class just the previous semester to this.
- * That doesn't mean I was able to implement everything properly right away, though;
- *   I ended up using x = i (mod m) instead of x = -i (mod m) and was quite confused at how
- *   I was getting the same answer no matetr how I calculated it but was still wrong.
- * By the way, I hope you're prepared to wait some 6 billion years for this to happen.
- */
-
 
 /**
  * Finds the inverse of n modulo m

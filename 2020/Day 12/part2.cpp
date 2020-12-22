@@ -1,12 +1,12 @@
+/*
+ * Apparently turning is really, really hard.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
 
 using namespace std;
-
-/**
- * Apparently turning is really, really hard.
- */
 
 int main() {
     string inputVal;

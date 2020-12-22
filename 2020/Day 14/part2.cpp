@@ -1,3 +1,7 @@
+/*
+ * Second verse pretty similar to the first, but iterating through all possible masks was not fun.
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -8,11 +12,6 @@
 #include <cmath>
 
 using namespace std;
-
-/**
- * Second verse pretty similar to the first, but iterating through all possible masks was not fun.
- */
-
 
 /**
  * Same as in Part 1, but adds a length parameter
