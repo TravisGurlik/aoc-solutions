@@ -1,6 +1,8 @@
 **/.vscode
 template
-**/part1
-**/part2
+part1
+part2
+part1db
+part2db
 *.out
 Makefile
