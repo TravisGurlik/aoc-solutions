@@ -16,6 +16,10 @@
 
 using namespace std;
 
+/**
+ * @brief A representation of a bingo board
+ * Contains the board's numbers and a "dab" board separately
+ */
 struct Board {
     vector<vector<int>> nums;
     vector<vector<bool>> called;
@@ -82,7 +86,7 @@ int main() {
                     if(boards[b].nums[row][col] == callNum) {   // If there's a match...
                         boards[b].called[row][col] = true;      // Mark the space
                         marked = true;
-                        // We just marked a new space, so check if this board wins (only the row and column witht he newly marked space):
+                        // We just marked a new space, so check if this board wins (only the row and column with the newly marked space):
                         if((boards[b].called[row][0] && boards[b].called[row][1] && boards[b].called[row][2] && boards[b].called[row][3] && boards[b].called[row][4]) ||
                             (boards[b].called[0][col] && boards[b].called[1][col] && boards[b].called[2][col] && boards[b].called[3][col] && boards[b].called[4][col])) {
                                 // If this board has won, save it as the winning board and break the loop:
