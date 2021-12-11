@@ -1,5 +1,6 @@
 /*
  * Also pretty simple (once i realized that the issue I was having was with cout).
+ * UPDATE: I printed the wrong things. Whoops.
  */
 
 #include <iostream>
@@ -100,8 +101,8 @@ int main() {
     input.close();
 
     sort(scores.begin(), scores.end());
-    for(int s : scores) {
-        cout << s << endl;
+    for(auto s = scores.begin(); s != scores.end(); s++) {
+        cout << *s << endl;
     }
     cout << endl;
     //Print final solution:
